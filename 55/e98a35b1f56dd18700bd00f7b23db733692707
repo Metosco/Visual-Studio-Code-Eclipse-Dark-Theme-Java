@@ -1,0 +1,19 @@
+package.json
+  s_677780d7853835::t_34f7d78b8f2eda 3,43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "55e98a35b1f56dd18700bd00f7b23db733692707",
+  "prompts": {},
+  "sessions": {
+    "s_677780d7853835": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "c18840f6-2fbc-4bd2-9357-a1bd09ba266b",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": "Juan Antonio López Sánchez <juanalsa@ext.inditex.com>"
+    }
+  }
+}
