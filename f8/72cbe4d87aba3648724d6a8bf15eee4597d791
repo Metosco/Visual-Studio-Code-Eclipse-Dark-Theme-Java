@@ -1,0 +1,33 @@
+.vscodeignore
+  s_677780d7853835::t_b7b6becca24ffa 1-8
+package.json
+  s_677780d7853835::t_b7b6becca24ffa 1-45
+"reference/Eclipse Dark Theme.xml"
+  s_677780d7853835::t_b7b6becca24ffa 1-202
+themes/eclipse-dark-java-color-theme.json
+  s_677780d7853835::t_b7b6becca24ffa 1-423
+README.md
+  s_677780d7853835::t_b7b6becca24ffa 1-31
+CHANGELOG.md
+  s_677780d7853835::t_b7b6becca24ffa 1-9
+LICENSE
+  s_677780d7853835::t_b7b6becca24ffa 1-21
+.gitignore
+  s_677780d7853835::t_b7b6becca24ffa 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f872cbe4d87aba3648724d6a8bf15eee4597d791",
+  "prompts": {},
+  "sessions": {
+    "s_677780d7853835": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "c18840f6-2fbc-4bd2-9357-a1bd09ba266b",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": "Juan Antonio López Sánchez <juanalsa@ext.inditex.com>"
+    }
+  }
+}
