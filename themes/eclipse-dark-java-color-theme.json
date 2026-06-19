@@ -1,0 +1,423 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "Eclipse Dark Java",
+  "semanticHighlighting": true,
+  "colors": {
+    "editor.background": "#2B2B2B",
+    "editor.foreground": "#F9FAF4",
+    "editorLineNumber.foreground": "#5A6470",
+    "editorLineNumber.activeForeground": "#F9FAF4",
+    "editorCursor.foreground": "#AEAFAD",
+    "editor.selectionBackground": "#214283",
+    "editor.inactiveSelectionBackground": "#2D4F85AA",
+    "editor.lineHighlightBackground": "#323232",
+    "editor.findMatchBackground": "#32593D",
+    "editor.findMatchHighlightBackground": "#32593D88",
+    "editorBracketMatch.background": "#3B514D",
+    "editorBracketMatch.border": "#6A8759",
+    "editorBracketHighlight.foreground1": "#F9FAF4",
+    "editorBracketHighlight.foreground2": "#F9FAF4",
+    "editorBracketHighlight.foreground3": "#F9FAF4",
+    "editorBracketHighlight.foreground4": "#F9FAF4",
+    "editorBracketHighlight.foreground5": "#F9FAF4",
+    "editorBracketHighlight.foreground6": "#F9FAF4",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#F9FAF4",
+    "editorIndentGuide.background1": "#3A3A3A",
+    "editorIndentGuide.activeBackground1": "#4A4A4A",
+    "editorWhitespace.foreground": "#3F3F3F",
+    "editorGutter.modifiedBackground": "#6897BB",
+    "editorGutter.addedBackground": "#6A8759",
+    "editorGutter.deletedBackground": "#CC7832",
+    "editorError.foreground": "#F44747",
+    "editorWarning.foreground": "#CCA700",
+    "editorInfo.foreground": "#4FC1FF",
+    "editor.wordHighlightBackground": "#26535A66",
+    "editor.wordHighlightStrongBackground": "#26535A99",
+    "editorOverviewRuler.wordHighlightForeground": "#036B13",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#B56277",
+    "activityBar.background": "#2A2A2A",
+    "sideBar.background": "#252526",
+    "statusBar.background": "#1E1E1E",
+    "tab.activeBackground": "#2B2B2B",
+    "tab.inactiveBackground": "#252526",
+    "titleBar.activeBackground": "#2A2A2A"
+  },
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#808080",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Java Keywords",
+      "scope": [
+        "keyword.control",
+        "keyword.other.package.java",
+        "keyword.other.import.java",
+        "keyword.operator.expression.instanceof",
+        "storage.modifier",
+        "storage.type.java"
+      ],
+      "settings": {
+        "foreground": "#CC6C1D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string",
+        "string.quoted",
+        "string.template"
+      ],
+      "settings": {
+        "foreground": "#17C6A3"
+      }
+    },
+    {
+      "name": "Numbers and Constants",
+      "scope": [
+        "constant.numeric",
+        "constant.language"
+      ],
+      "settings": {
+        "foreground": "#CC81BA"
+      }
+    },
+    {
+      "name": "String Escapes",
+      "scope": [
+        "constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#DB771D"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": [
+        "entity.name.type",
+        "entity.name.class",
+        "entity.name.type.class",
+        "entity.name.type.class.java",
+        "meta.method-call.java entity.name.type.class.java",
+        "meta.method-call.java support.class.java",
+        "support.class",
+        "support.class.java",
+        "storage.type",
+        "entity.name.type.interface"
+      ],
+      "settings": {
+        "foreground": "#1290C3"
+      }
+    },
+    {
+      "name": "Interfaces",
+      "scope": [
+        "entity.name.type.interface"
+      ],
+      "settings": {
+        "foreground": "#80F2F6"
+      }
+    },
+    {
+      "name": "Package and Import names",
+      "scope": [
+        "meta.package.declaration.java",
+        "meta.import.java",
+        "entity.name.package.java",
+        "entity.name.namespace.java",
+        "entity.name.namespace",
+        "meta.import.java storage.modifier",
+        "meta.package.java storage.modifier",
+        "support.other.package.java"
+      ],
+      "settings": {
+        "foreground": "#1290C3"
+      }
+    },
+    {
+      "name": "Annotations",
+      "scope": [
+        "meta.annotation",
+        "meta.annotation.java",
+        "storage.type.annotation",
+        "storage.type.annotation.java",
+        "entity.name.function.annotation",
+        "entity.name.type.annotation",
+        "entity.name.type.annotation.java",
+        "meta.annotation entity.name.type",
+        "meta.annotation.java entity.name.type",
+        "meta.annotation entity.name.type.class",
+        "meta.annotation.java entity.name.type.class",
+        "meta.annotation entity.name.type.class.java",
+        "meta.annotation.java entity.name.type.class.java",
+        "meta.annotation support.class",
+        "meta.annotation.java support.class",
+        "meta.annotation support.class.java",
+        "meta.annotation.java support.class.java",
+        "support.type.annotation",
+        "support.type.annotation.java",
+        "variable.annotation",
+        "punctuation.definition.annotation"
+      ],
+      "settings": {
+        "foreground": "#a0a0a0",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Annotation Attributes",
+      "scope": [
+        "entity.other.attribute-name.annotation"
+      ],
+      "settings": {
+        "foreground": "#EB4B64"
+      }
+    },
+    {
+      "name": "Methods",
+      "scope": [
+        "meta.method-call.java entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#A7EC21"
+      }
+    },
+    {
+      "name": "Method Declarations",
+      "scope": [
+        "meta.method.declaration entity.name.function",
+        "meta.function entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#1EB540"
+      }
+    },
+    {
+      "name": "This and Super",
+      "scope": [
+        "variable.language.this",
+        "variable.language.super",
+        "keyword.other.this",
+        "keyword.other.super"
+      ],
+      "settings": {
+        "foreground": "#CC6C1D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "meta.definition.variable.name"
+      ],
+      "settings": {
+        "foreground": "#F2F250"
+      }
+    },
+    {
+      "name": "Parameters",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#79ABFF"
+      }
+    },
+    {
+      "name": "Properties and Fields",
+      "scope": [
+        "variable.other.property",
+        "variable.object.property",
+        "meta.field"
+      ],
+      "settings": {
+        "foreground": "#66E1F8"
+      }
+    },
+    {
+      "name": "Static Fields",
+      "scope": [
+        "variable.other.constant",
+        "variable.other.constant.property"
+      ],
+      "settings": {
+        "foreground": "#8DDAF8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Javadoc",
+      "scope": [
+        "comment.block.documentation"
+      ],
+      "settings": {
+        "foreground": "#808080"
+      }
+    },
+    {
+      "name": "Javadoc Tags",
+      "scope": [
+        "storage.type.class.javadoc",
+        "entity.name.tag.javadoc"
+      ],
+      "settings": {
+        "foreground": "#8E8070",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Javadoc Tag Values",
+      "scope": [
+        "comment.block.documentation variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#9A8C7C"
+      }
+    },
+    {
+      "name": "Operators And Punctuation",
+      "scope": [
+        "keyword.operator",
+        "punctuation.terminator"
+      ],
+      "settings": {
+        "foreground": "#E6E6FA"
+      }
+    },
+    {
+      "name": "Colons And Method Reference",
+      "scope": [
+        "punctuation.separator.colon",
+        "punctuation.separator.colon.java",
+        "punctuation.separator.method-reference",
+        "punctuation.separator.method-reference.java",
+        "keyword.operator.colon",
+        "keyword.operator.colon.java",
+        "keyword.operator.double-colon",
+        "keyword.operator.double-colon.java",
+        "keyword.operator.method-reference",
+        "keyword.operator.method-reference.java"
+      ],
+      "settings": {
+        "foreground": "#F9FAF4"
+      }
+    },
+    {
+      "name": "Brackets And Parentheses",
+      "scope": [
+        "punctuation.bracket",
+        "punctuation.definition.bracket",
+        "punctuation.section.braces",
+        "punctuation.section.brackets",
+        "punctuation.section.parens",
+        "punctuation.section.group.begin",
+        "punctuation.section.group.end",
+        "punctuation.definition.parameters.begin",
+        "punctuation.definition.parameters.end",
+        "punctuation.definition.arguments.begin",
+        "punctuation.definition.arguments.end",
+        "punctuation.section.method.begin",
+        "punctuation.section.method.end",
+        "meta.brace",
+        "meta.group.braces",
+        "meta.group.brackets",
+        "meta.group.parens"
+      ],
+      "settings": {
+        "foreground": "#F9FAF4"
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": [
+        "invalid",
+        "invalid.illegal"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "background": "#F44747"
+      }
+    }
+  ],
+  "semanticTokenColors": {
+    "class": "#1290C3",
+    "class:java": "#1290C3",
+    "class.annotation": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "class.annotation:java": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "class.abstract": "#3EABE6",
+    "interface": "#80F2F6",
+    "type.annotation": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "type.annotation:java": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "enum": {
+      "foreground": "#CC81BA",
+      "fontStyle": "italic"
+    },
+    "enumMember": "#66E1F8",
+    "type": "#1290C3",
+    "typeParameter": "#BFA4A4",
+    "namespace": "#1290C3",
+    "annotation": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "annotation:java": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "annotation.defaultLibrary": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "annotation.defaultLibrary:java": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "decorator": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "decorator:java": {
+      "foreground": "#a0a0a0",
+      "fontStyle": ""
+    },
+    "method": "#A7EC21",
+    "method.declaration": "#1EB540",
+    "method.abstract": "#80F6A7",
+    "property": "#66E1F8",
+    "variable": "#F2F250",
+    "parameter": "#79ABFF",
+    "keyword": {
+      "foreground": "#CC6C1D",
+      "fontStyle": "bold"
+    },
+    "string": "#17C6A3",
+    "string.escape": "#DB771D",
+    "number": "#CC81BA",
+    "comment": "#808080",
+    "operator": "#F9FAF4",
+    "punctuation": "#F9FAF4",
+    "function.defaultLibrary": "#1290C3",
+    "function": "#A7EC21"
+  }
+}

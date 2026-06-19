@@ -1,0 +1,8 @@
+.git/**
+.github/**
+.vscode/**
+reference/**
+*.md
+!README.md
+.gitignore
+.tool-versions

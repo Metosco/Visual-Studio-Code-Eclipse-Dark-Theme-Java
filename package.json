@@ -1,0 +1,45 @@
+{
+  "name": "eclipse-dark-java-theme",
+  "displayName": "Eclipse Dark Java",
+  "description": "A Java-focused Eclipse Dark inspired theme for VS Code.",
+  "version": "0.1.0",
+  "publisher": "Metosco",
+  "author": {
+    "name": "Metosco"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Metosco/Visual-Studio-Code-Eclipse-Dark-Theme-Java"
+  },
+  "bugs": {
+    "url": "https://github.com/Metosco/Visual-Studio-Code-Eclipse-Dark-Theme-Java/issues"
+  },
+  "homepage": "https://github.com/Metosco/Visual-Studio-Code-Eclipse-Dark-Theme-Java#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "eclipse",
+    "java",
+    "color-theme"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Eclipse Dark Java",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eclipse-dark-java-color-theme.json"
+      }
+    ]
+  }
+}
