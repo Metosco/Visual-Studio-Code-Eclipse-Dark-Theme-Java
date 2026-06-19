@@ -1,6 +1,6 @@
 {
   "name": "eclipse-dark-java-theme",
-  "displayName": "Eclipse Dark Java",
+  "displayName": "Eclipse Dark Theme Java",
   "description": "A Java-focused Eclipse Dark inspired theme for VS Code.",
   "version": "0.1.0",
   "publisher": "Metosco",
@@ -40,6 +40,6 @@
         "uiTheme": "vs-dark",
         "path": "./themes/eclipse-dark-java-color-theme.json"
       }
-    ]
+    ]    
   }
 }
