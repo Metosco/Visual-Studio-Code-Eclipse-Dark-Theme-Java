@@ -346,6 +346,270 @@
         "foreground": "#FFFFFF",
         "background": "#F44747"
       }
+    },
+    {
+      "name": "XML/HTML Tag Names",
+      "scope": [
+        "entity.name.tag",
+        "entity.name.tag.xml",
+        "entity.name.tag.html",
+        "entity.name.tag.localname.xml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "XML/HTML Attribute Names",
+      "scope": [
+        "entity.other.attribute-name",
+        "entity.other.attribute-name.xml",
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.localname.xml"
+      ],
+      "settings": {
+        "foreground": "#9CDCFE"
+      }
+    },
+    {
+      "name": "XML/HTML Punctuation (Tags)",
+      "scope": [
+        "punctuation.definition.tag",
+        "punctuation.definition.tag.xml",
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin",
+        "punctuation.definition.tag.end",
+        "punctuation.definition.tag.begin.xml",
+        "punctuation.definition.tag.end.xml"
+      ],
+      "settings": {
+        "foreground": "#808080"
+      }
+    },
+    {
+      "name": "XML Processing Instruction",
+      "scope": [
+        "meta.tag.preprocessor.xml",
+        "entity.name.tag.preprocessor.xml",
+        "meta.processing-instruction",
+        "meta.tag.sgml",
+        "entity.name.tag.sgml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "XML Namespace Prefix",
+      "scope": [
+        "entity.name.tag.namespace.xml",
+        "entity.other.attribute-name.namespace.xml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "XML/HTML String Values",
+      "scope": [
+        "string.quoted.double.xml",
+        "string.quoted.single.xml",
+        "meta.tag string.quoted",
+        "string.quoted.double.html",
+        "string.quoted.single.html"
+      ],
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "name": "XML CDATA",
+      "scope": [
+        "string.unquoted.cdata.xml"
+      ],
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "name": "XML Entity References",
+      "scope": [
+        "constant.character.entity",
+        "constant.character.entity.xml",
+        "punctuation.definition.entity.xml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "XML DOCTYPE",
+      "scope": [
+        "variable.language.documentroot.xml",
+        "keyword.other.doctype",
+        "meta.tag.sgml.doctype"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "XML Comment",
+      "scope": [
+        "comment.block.xml"
+      ],
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "name": "JSON Property Names",
+      "scope": [
+        "support.type.property-name.json",
+        "support.type.property-name.json.comments"
+      ],
+      "settings": {
+        "foreground": "#9CDCFE"
+      }
+    },
+    {
+      "name": "JSON String Values",
+      "scope": [
+        "string.quoted.double.json",
+        "string.quoted.double.json.comments"
+      ],
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "name": "JSON Numbers",
+      "scope": [
+        "constant.numeric.json",
+        "constant.numeric.json.comments"
+      ],
+      "settings": {
+        "foreground": "#B5CEA8"
+      }
+    },
+    {
+      "name": "JSON Booleans and Null",
+      "scope": [
+        "constant.language.json",
+        "constant.language.json.comments"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "JSON Punctuation",
+      "scope": [
+        "punctuation.support.type.property-name.begin.json",
+        "punctuation.support.type.property-name.end.json",
+        "punctuation.definition.string.begin.json",
+        "punctuation.definition.string.end.json",
+        "punctuation.separator.dictionary.key-value.json",
+        "punctuation.separator.dictionary.pair.json",
+        "punctuation.separator.array.json",
+        "punctuation.definition.dictionary.begin.json",
+        "punctuation.definition.dictionary.end.json",
+        "punctuation.definition.array.begin.json",
+        "punctuation.definition.array.end.json"
+      ],
+      "settings": {
+        "foreground": "#D4D4D4"
+      }
+    },
+    {
+      "name": "YAML Keys",
+      "scope": [
+        "entity.name.tag.yaml",
+        "support.type.property-name.yaml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "YAML String Values",
+      "scope": [
+        "string.quoted.double.yaml",
+        "string.quoted.single.yaml",
+        "string.unquoted.plain.out.yaml",
+        "string.unquoted.plain.in.yaml"
+      ],
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "name": "YAML Numbers",
+      "scope": [
+        "constant.numeric.integer.yaml",
+        "constant.numeric.float.yaml"
+      ],
+      "settings": {
+        "foreground": "#B5CEA8"
+      }
+    },
+    {
+      "name": "YAML Booleans and Null",
+      "scope": [
+        "constant.language.boolean.yaml",
+        "constant.language.null.yaml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "YAML Anchors and Aliases",
+      "scope": [
+        "entity.name.type.anchor.yaml",
+        "variable.other.alias.yaml",
+        "punctuation.definition.anchor.yaml",
+        "punctuation.definition.alias.yaml",
+        "keyword.control.flow.block-scalar.literal.yaml",
+        "keyword.control.flow.block-scalar.folded.yaml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "YAML Punctuation",
+      "scope": [
+        "punctuation.separator.key-value.mapping.yaml",
+        "punctuation.definition.block.sequence.item.yaml",
+        "punctuation.definition.sequence.begin.yaml",
+        "punctuation.definition.sequence.end.yaml",
+        "punctuation.definition.mapping.begin.yaml",
+        "punctuation.definition.mapping.end.yaml"
+      ],
+      "settings": {
+        "foreground": "#D4D4D4"
+      }
+    },
+    {
+      "name": "YAML Comments",
+      "scope": [
+        "comment.line.number-sign.yaml"
+      ],
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "name": "YAML Directives and Document Markers",
+      "scope": [
+        "keyword.other.directive.yaml",
+        "entity.other.document.begin.yaml",
+        "entity.other.document.end.yaml"
+      ],
+      "settings": {
+        "foreground": "#569CD6"
+      }
     }
   ],
   "semanticTokenColors": {

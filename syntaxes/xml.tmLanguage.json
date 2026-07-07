@@ -1,0 +1,138 @@
+{
+  "scopeName": "text.xml",
+  "name": "XML",
+  "fileTypes": ["xml", "xsd", "xsl", "xslt", "svg", "pom", "wsdl", "config", "props", "csproj", "fsproj", "targets", "resx"],
+  "patterns": [
+    { "include": "#xml-processing-instruction" },
+    { "include": "#xml-doctype" },
+    { "include": "#xml-comment" },
+    { "include": "#xml-cdata" },
+    { "include": "#xml-tag-close" },
+    { "include": "#xml-tag-open" },
+    { "include": "#xml-entity" }
+  ],
+  "repository": {
+    "xml-processing-instruction": {
+      "begin": "<\\?",
+      "end": "\\?>",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.tag.begin.xml" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.tag.end.xml" }
+      },
+      "name": "meta.tag.preprocessor.xml",
+      "patterns": [
+        {
+          "match": "(?<=<\\?)(xml|[-_a-zA-Z0-9]+)",
+          "name": "entity.name.tag.xml"
+        },
+        { "include": "#xml-attribute" },
+        { "include": "#xml-string-double" },
+        { "include": "#xml-string-single" }
+      ]
+    },
+    "xml-doctype": {
+      "begin": "<!DOCTYPE",
+      "end": ">",
+      "beginCaptures": {
+        "0": { "name": "keyword.other.doctype.xml" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.tag.end.xml" }
+      },
+      "name": "meta.tag.sgml.doctype.xml",
+      "patterns": [
+        { "include": "#xml-string-double" },
+        { "include": "#xml-string-single" }
+      ]
+    },
+    "xml-comment": {
+      "begin": "<!--",
+      "end": "-->",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.comment.begin.xml" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.comment.end.xml" }
+      },
+      "name": "comment.block.xml"
+    },
+    "xml-cdata": {
+      "begin": "<!\\[CDATA\\[",
+      "end": "\\]\\]>",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.string.begin.xml" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end.xml" }
+      },
+      "name": "string.unquoted.cdata.xml"
+    },
+    "xml-tag-close": {
+      "match": "(</)([a-zA-Z_][a-zA-Z0-9_.:-]*)(>)",
+      "captures": {
+        "1": { "name": "punctuation.definition.tag.begin.xml" },
+        "2": { "name": "entity.name.tag.xml" },
+        "3": { "name": "punctuation.definition.tag.end.xml" }
+      },
+      "name": "meta.tag.close.xml"
+    },
+    "xml-tag-open": {
+      "begin": "(<)([a-zA-Z_][a-zA-Z0-9_.:-]*)\\b",
+      "end": "(/?>)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.xml" },
+        "2": { "name": "entity.name.tag.xml" }
+      },
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.tag.end.xml" }
+      },
+      "name": "meta.tag.open.xml",
+      "patterns": [
+        { "include": "#xml-attribute" },
+        { "include": "#xml-string-double" },
+        { "include": "#xml-string-single" }
+      ]
+    },
+    "xml-attribute": {
+      "match": "([a-zA-Z_][a-zA-Z0-9_.:-]*)\\s*(=)",
+      "captures": {
+        "1": { "name": "entity.other.attribute-name.xml" },
+        "2": { "name": "punctuation.separator.key-value.xml" }
+      }
+    },
+    "xml-string-double": {
+      "begin": "\"",
+      "end": "\"",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.string.begin.xml" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end.xml" }
+      },
+      "name": "string.quoted.double.xml",
+      "patterns": [
+        { "include": "#xml-entity" }
+      ]
+    },
+    "xml-string-single": {
+      "begin": "'",
+      "end": "'",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.string.begin.xml" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.string.end.xml" }
+      },
+      "name": "string.quoted.single.xml",
+      "patterns": [
+        { "include": "#xml-entity" }
+      ]
+    },
+    "xml-entity": {
+      "match": "&(#[0-9]+|#x[0-9a-fA-F]+|[a-zA-Z0-9]+);",
+      "name": "constant.character.entity.xml"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "name": "eclipse-dark-java-theme",
   "displayName": "Eclipse Dark Theme Java",
   "description": "A Java-focused Eclipse Dark inspired theme for VS Code.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "Metosco",
   "author": {
     "name": "Metosco"
@@ -40,6 +40,46 @@
         "uiTheme": "vs-dark",
         "path": "./themes/eclipse-dark-java-color-theme.json"
       }
-    ]    
+    ],
+    "grammars": [
+      {
+        "language": "xml",
+        "scopeName": "text.xml",
+        "path": "./syntaxes/xml.tmLanguage.json"
+      },
+      {
+        "language": "json",
+        "scopeName": "source.json",
+        "path": "./syntaxes/json.tmLanguage.json"
+      },
+      {
+        "language": "jsonc",
+        "scopeName": "source.json",
+        "path": "./syntaxes/json.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "xml",
+        "aliases": ["XML", "xml"],
+        "extensions": [".xml", ".xsd", ".xsl", ".xslt", ".svg", ".wsdl", ".pom"],
+        "filenames": ["pom.xml"],
+        "configuration": "./language-configuration/xml-language-configuration.json"
+      },
+      {
+        "id": "json",
+        "aliases": ["JSON", "json"],
+        "extensions": [".json", ".bowerrc", ".jshintrc", ".jscsrc", ".eslintrc", ".babelrc", ".webmanifest"],
+        "filenames": [".watchmanconfig", ".prettierrc"],
+        "configuration": "./language-configuration/json-language-configuration.json"
+      },
+      {
+        "id": "jsonc",
+        "aliases": ["JSON with Comments"],
+        "extensions": [".jsonc"],
+        "filenames": ["tsconfig.json", "jsconfig.json", "launch.json", "settings.json", "tasks.json", "devcontainer.json"],
+        "configuration": "./language-configuration/json-language-configuration.json"
+      }
+    ]
   }
 }
